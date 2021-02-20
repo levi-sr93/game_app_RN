@@ -13,6 +13,15 @@ export const Header = styled.View`
   margin: 16px 32px 0 32px;
 `;
 
+export const AvatarContainer = styled.TouchableOpacity`
+  width: 45px;
+  height: 45px;
+  border-radius: 22.5px;
+  background-color: #819ee5;
+  align-items: center;
+  justify-content: center;
+`;
+
 export const Avatar = styled.Image`
   width: 40px;
   height: 40px;
@@ -32,7 +41,7 @@ export const Category = styled.TouchableOpacity`
   height: 45px;
   width: 100px;
   border-radius: 30px;
-  background-color: ${(props) => (props.selected ? "#ffda95" : "#ffb833")};
+  background-color: ${(props) => (props.selected ? "#819ee5" : "#819ee5")};
 `;
 
 export const CategoryName = styled(Text)`

@@ -11,6 +11,7 @@ export const games = [
     age: "10+",
     cover: require("../../../assets/images/shattered/shattered-1.png"),
     screenshots: [
+      require("../../../assets/images/shattered/shattered-1.png"),
       require("../../../assets/images/shattered/shattered-2.png"),
       require("../../../assets/images/shattered/shattered-3.png"),
       require("../../../assets/images/shattered/shattered-4.png"),
@@ -30,6 +31,7 @@ export const games = [
     age: "18+",
     cover: require("../../../assets/images/sekiro/sekiro-1.png"),
     screenshots: [
+      require("../../../assets/images/sekiro/sekiro-1.png"),
       require("../../../assets/images/sekiro/sekiro-2.png"),
       require("../../../assets/images/sekiro/sekiro-3.png"),
       require("../../../assets/images/sekiro/sekiro-4.png"),
@@ -49,6 +51,7 @@ export const games = [
     age: "8+",
     cover: require("../../../assets/images/karts/karts-1.png"),
     screenshots: [
+      require("../../../assets/images/karts/karts-1.png"),
       require("../../../assets/images/karts/karts-2.png"),
       require("../../../assets/images/karts/karts-3.png"),
       require("../../../assets/images/karts/karts-4.png"),

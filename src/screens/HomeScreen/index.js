@@ -1,5 +1,6 @@
 import React, { useState, useCallback, useRef } from "react";
-import { Alert, StatusBar, View } from "react-native";
+import { StatusBar } from "react-native";
+import { useNavigation } from "@react-navigation/native";
 import Text from "../../components/Text";
 
 import { categoryList } from "../../services/mock/categories";
@@ -7,6 +8,7 @@ import { games } from "../../services/mock/gameData";
 import {
   Container,
   Header,
+  AvatarContainer,
   Avatar,
   Categories,
   Category,
@@ -23,6 +25,7 @@ import {
 const HomeScreen = () => {
   const [selectedCategory, setSelectedCategory] = useState("All");
   const gamesRef = useRef(null);
+  const navigation = useNavigation();
 
   const handleChangeCategory = useCallback((category) => {
     gamesRef.current.scrollToOffset({ x: 0, y: 0 });
@@ -31,15 +34,15 @@ const HomeScreen = () => {
 
   const GameItem = useCallback((game) => {
     return (
-      <Game>
+      <Game onPress={() => navigation.navigate("GameScreen", { game: game })}>
         <GameCover source={game.cover} />
         <GameInfo backgroundColor={game.backgroundColor}>
           <GameImage source={game.cover} />
           <GameTitle>
-            <Text medium bold>
+            <Text medium heavy>
               {game.title}
             </Text>
-            <Text light small>
+            <Text light small color="#fcfcfc">
               {game.teaser}
             </Text>
           </GameTitle>
@@ -64,8 +67,9 @@ const HomeScreen = () => {
             Best Games for Today
           </Text>
         </Text>
-
-        <Avatar source={require("../../../assets/images/avatar.jpeg")} />
+        <AvatarContainer onPress={() => navigation.navigate("ProfileScreen")}>
+          <Avatar source={require("../../../assets/images/avatar.jpeg")} />
+        </AvatarContainer>
       </Header>
 
       <Categories horizontal showHorizontalScrollIndicator={false}>
