@@ -21,7 +21,7 @@ export const GoBackButton = styled.TouchableOpacity`
   position: absolute;
   top: 48px;
   left: 20px;
-  background-color: #819ee5;
+  background-color: #eec747;
   border-radius: 32px;
 `;
 
@@ -54,7 +54,7 @@ export const GameInfo = styled.View`
 `;
 
 export const Download = styled.View`
-  background-color: #819ee5;
+  background-color: #eec747;
   width: 40px;
   height: 40px;
   border-radius: 20px;

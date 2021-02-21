@@ -41,7 +41,7 @@ const GameScreen = () => {
           name="ios-star"
           size={16}
           style={{ marginRight: 5 }}
-          color={Math.floor(game.rating) >= s ? "#819ee5" : "#434968"}
+          color={Math.floor(game.rating) >= s ? "#eec747" : "#c6c4b6"}
         />
       );
     }

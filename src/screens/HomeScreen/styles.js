@@ -17,7 +17,7 @@ export const AvatarContainer = styled.TouchableOpacity`
   width: 45px;
   height: 45px;
   border-radius: 22.5px;
-  background-color: #819ee5;
+  background-color: #eec747;
   align-items: center;
   justify-content: center;
 `;
@@ -41,7 +41,7 @@ export const Category = styled.TouchableOpacity`
   height: 45px;
   width: 100px;
   border-radius: 30px;
-  background-color: ${(props) => (props.selected ? "#819ee5" : "#819ee5")};
+  background-color: ${(props) => (props.selected ? "#e8e5b9" : "#eec747")};
 `;
 
 export const CategoryName = styled(Text)`
@@ -53,7 +53,7 @@ export const CategoryDot = styled.View`
   width: 6px;
   height: 6px;
   border-radius: 3px;
-  background-color: #ffda95;
+  background-color: #f98776;
 `;
 
 export const Games = styled.FlatList`
